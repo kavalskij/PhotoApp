@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TPPCollectionViewController.h
 //  PhotoPhun
 //
 //  Created by Aleksandrs Muravjovs on 18/04/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TPPCollectionViewController : UICollectionViewController
 
 @end
-

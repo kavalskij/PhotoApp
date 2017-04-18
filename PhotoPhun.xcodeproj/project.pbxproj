@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		9F4155331EA644580020F149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4155321EA644580020F149 /* main.m */; };
 		9F4155361EA644580020F149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4155351EA644580020F149 /* AppDelegate.m */; };
-		9F4155391EA644580020F149 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4155381EA644580020F149 /* ViewController.m */; };
 		9F41553C1EA644580020F149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F41553A1EA644580020F149 /* Main.storyboard */; };
 		9F41553E1EA644580020F149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F41553D1EA644580020F149 /* Assets.xcassets */; };
 		9F4155411EA644580020F149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F41553F1EA644580020F149 /* LaunchScreen.storyboard */; };
+		9F41554A1EA6524D0020F149 /* TPPCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4155491EA6524D0020F149 /* TPPCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		9F4155321EA644580020F149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F4155341EA644580020F149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F4155351EA644580020F149 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9F4155371EA644580020F149 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F4155381EA644580020F149 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9F41553B1EA644580020F149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F41553D1EA644580020F149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4155401EA644580020F149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4155421EA644580020F149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4155481EA6524D0020F149 /* TPPCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPCollectionViewController.h; path = ../TPPCollectionViewController.h; sourceTree = "<group>"; };
+		9F4155491EA6524D0020F149 /* TPPCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPCollectionViewController.m; path = ../TPPCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				9F4155341EA644580020F149 /* AppDelegate.h */,
 				9F4155351EA644580020F149 /* AppDelegate.m */,
-				9F4155371EA644580020F149 /* ViewController.h */,
-				9F4155381EA644580020F149 /* ViewController.m */,
+				9F4155481EA6524D0020F149 /* TPPCollectionViewController.h */,
+				9F4155491EA6524D0020F149 /* TPPCollectionViewController.m */,
 				9F41553A1EA644580020F149 /* Main.storyboard */,
 				9F41553D1EA644580020F149 /* Assets.xcassets */,
 				9F41553F1EA644580020F149 /* LaunchScreen.storyboard */,
@@ -151,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4155391EA644580020F149 /* ViewController.m in Sources */,
+				9F41554A1EA6524D0020F149 /* TPPCollectionViewController.m in Sources */,
 				9F4155361EA644580020F149 /* AppDelegate.m in Sources */,
 				9F4155331EA644580020F149 /* main.m in Sources */,
 			);
