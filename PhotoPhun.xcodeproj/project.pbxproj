@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F2ECCB81EA78AE0006E9D93 /* TPPCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2ECCB71EA78AE0006E9D93 /* TPPCollectionViewController.m */; };
+		9F2ECCBB1EA8CC38006E9D93 /* TPPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2ECCBA1EA8CC38006E9D93 /* TPPCollectionViewCell.m */; };
+		9F2ECCBD1EA8E1D3006E9D93 /* glassFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2ECCBC1EA8E1D3006E9D93 /* glassFlower.png */; };
 		9F4155331EA644580020F149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4155321EA644580020F149 /* main.m */; };
 		9F4155361EA644580020F149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4155351EA644580020F149 /* AppDelegate.m */; };
 		9F41553C1EA644580020F149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F41553A1EA644580020F149 /* Main.storyboard */; };
@@ -18,6 +20,9 @@
 /* Begin PBXFileReference section */
 		9F2ECCB61EA78AE0006E9D93 /* TPPCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPCollectionViewController.h; path = ../TPPCollectionViewController.h; sourceTree = "<group>"; };
 		9F2ECCB71EA78AE0006E9D93 /* TPPCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPCollectionViewController.m; path = ../TPPCollectionViewController.m; sourceTree = "<group>"; };
+		9F2ECCB91EA8CC38006E9D93 /* TPPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPCollectionViewCell.h; sourceTree = "<group>"; };
+		9F2ECCBA1EA8CC38006E9D93 /* TPPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPCollectionViewCell.m; sourceTree = "<group>"; };
+		9F2ECCBC1EA8E1D3006E9D93 /* glassFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glassFlower.png; sourceTree = "<group>"; };
 		9F41552E1EA644580020F149 /* PhotoPhun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPhun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4155321EA644580020F149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F4155341EA644580020F149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,10 +63,13 @@
 		9F4155301EA644580020F149 /* PhotoPhun */ = {
 			isa = PBXGroup;
 			children = (
+				9F2ECCBC1EA8E1D3006E9D93 /* glassFlower.png */,
 				9F4155341EA644580020F149 /* AppDelegate.h */,
 				9F4155351EA644580020F149 /* AppDelegate.m */,
 				9F2ECCB61EA78AE0006E9D93 /* TPPCollectionViewController.h */,
 				9F2ECCB71EA78AE0006E9D93 /* TPPCollectionViewController.m */,
+				9F2ECCB91EA8CC38006E9D93 /* TPPCollectionViewCell.h */,
+				9F2ECCBA1EA8CC38006E9D93 /* TPPCollectionViewCell.m */,
 				9F41553A1EA644580020F149 /* Main.storyboard */,
 				9F41553D1EA644580020F149 /* Assets.xcassets */,
 				9F41553F1EA644580020F149 /* LaunchScreen.storyboard */,
@@ -141,6 +149,7 @@
 				9F4155411EA644580020F149 /* LaunchScreen.storyboard in Resources */,
 				9F41553E1EA644580020F149 /* Assets.xcassets in Resources */,
 				9F41553C1EA644580020F149 /* Main.storyboard in Resources */,
+				9F2ECCBD1EA8E1D3006E9D93 /* glassFlower.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2ECCB81EA78AE0006E9D93 /* TPPCollectionViewController.m in Sources */,
+				9F2ECCBB1EA8CC38006E9D93 /* TPPCollectionViewCell.m in Sources */,
 				9F4155361EA644580020F149 /* AppDelegate.m in Sources */,
 				9F4155331EA644580020F149 /* main.m in Sources */,
 			);

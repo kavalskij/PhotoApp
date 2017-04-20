@@ -7,6 +7,7 @@
 //
 
 #import "TPPCollectionViewController.h"
+#import "TPPCollectionViewCell.h"
 
 @interface TPPCollectionViewController ()
 
@@ -19,11 +20,10 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.collectionView.backgroundColor = [UIColor blueColor];
-    
-    
-    
-    
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.topItem.title = @"PhotoPhun";
+
+    [self refreshPhotos];
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -31,6 +31,19 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
+}
+
+- (void) refreshPhotos {
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURL *url = [NSURL URLWithString:@"https://swapi.co/api/people"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL *_Nullable location, NSURLResponse *_Nullable response, NSError *_Nullable error){
+        NSString *responseText = [[NSString alloc] initWithContentsOfURL:location encoding:NSUTF8StringEncoding error:nil];
+        
+        NSLog(@"ResponseText: %@", responseText);
+    }];
+    [task resume];
 }
 
 
@@ -63,8 +76,8 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoPhunCell" forIndexPath:indexPath];
-    
+    TPPCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoPhunCell" forIndexPath:indexPath];
+    cell.photoView.image = [UIImage imageNamed:@"glassFlower"];
     
     // Configure the cell
     
